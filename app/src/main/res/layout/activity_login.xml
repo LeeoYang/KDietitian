@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.dobbby.kdietitian.login.LoginActivity">
+
+    <FrameLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <ImageView
+                android:id="@+id/main_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/main_background"/>
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/back_arrow"-->
+        <!--android:layout_gravity="left|top"-->
+        <!--android:layout_marginStart="23dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:visibility="invisible"-->
+        <!--android:background="@mipmap/back_arrow"-->
+        <!--android:layout_width="15dp"-->
+        <!--android:layout_height="23dp"/>-->
+
+        <include layout="@layout/back_arrow"/>
+
+        <include layout="@layout/toolbar_line"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/log_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <!--add LoginMethodFragment or LoginFragment here in Java code-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/log_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.dobbby.kdietitian.login.LoginMethodFragment"-->
+        <!--tools:layout="@layout/fragment_login_method"/>-->
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">生酮营养师</string>
+    <string name="base_url">http://10.21.101.8:9876/</string>
+    <!--<string name="base_url">http://192.168.43.34:9876/</string>-->
+
+    <!--start login and sign up strings-->
+    <string name="weibo">微博</string>
+    <string name="wechat">微信</string>
+    <string name="qq">QQ</string>
+    <string name="login_text">登录</string>
+    <string name="empty_tel_error">手机号不能为空</string>
+    <string name="short_tel_error">手机号不足11位</string>
+    <string name="tel_used_error">该手机号已注册账号</string>
+    <string name="empty_nickname_error">昵称不能为空</string>
+    <string name="nickname_used_error">昵称已被占用</string>
+    <string name="term_not_checked_error">确定同意用户协议才可注册</string>
+    <string name="empty_password_error">密码不能为空</string>
+    <string name="short_password_error">密码长度不足6位</string>
+    <string name="wrong_tel_or_password">手机号或密码错误</string>
+    <string name="no_account_question">还没有账号?</string>
+    <string name="sign_up_now">立即注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="password">密码</string>
+    <string name="telephone_number">手机号</string>
+    <string name="sign_up">注册</string>
+    <string name="or">/</string>
+    <string name="login_by_tel">手机号登录</string>
+    <string name="tel_restriction">仅支持中国大陆地区的手机号, 港澳台及海外用户请使用第三方账号登录。</string>
+    <string name="next_step">下一步</string>
+    <string name="pin_message">手机验证码</string>
+    <string name="query_pin_message">获取验证码</string>
+    <string name="input_tel">输入手机号</string>
+    <string name="your_role">您的身份</string>
+    <string name="role_dietitian">营养师</string>
+    <string name="role_normal">用户</string>
+    <string name="nickname_hint">昵称 (不含特殊字符)</string>
+    <string name="password_hint">密码 (至少六位)</string>
+    <string name="i_agree">我同意</string>
+    <string name="term_of_use">用户协议及隐私条款</string>
+    <string name="i_disagree">不同意</string>
+    <string name="init_profile">完善资料</string>
+    <string name="init_auth">完善认证</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="gender">性别</string>
+    <string name="i_male">我是男性</string>
+    <string name="i_female">我是女性</string>
+    <string name="birthday">出生日期</string>
+    <string name="my_progress">我的进度</string>
+    <string name="my_goal">我的目标</string>
+    <string name="my_plan">我的计划</string>
+    <string name="finish">完成</string>
+    <string name="expected_achieve_day">预计达成时间</string>
+    <string name="diet_hint_too_fast">减重速度过快，建议低一些</string>
+    <string name="diet_weekly">每周减重</string>
+    <string name="_0">0</string>
+    <string name="dot">.</string>
+    <string name="kg">kg</string>
+    <string name="init_height">初始身高</string>
+    <string name="cm">cm</string>
+    <string name="init_weight">初始体重</string>
+    <string name="goal">目标</string>
+    <string name="lose_weight">减重</string>
+    <string name="keep_shape">塑形</string>
+    <string name="recommend_keep_shape">根据您当前体重, 建议您塑形</string>
+    <string name="weight_goal">目标体重</string>
+    <string name="x_weeks" formatted="false">%d 周</string>
+    <string name="x_days" formatted="false">%d年%d月%d日, %d天之后</string>
+    <string name="name_empty_error">姓名不能为空</string>
+    <string name="email_empty_error">邮箱不能为空</string>
+    <string name="hospital_empty_error">医院不能为空</string>
+    <string name="office_empty_error">科室不能为空</string>
+    <string name="title_empty_error">职称不能为空</string>
+    <!--end login and sign up strings-->
+
+    <!--start action activity strings-->
+    <string name="breakfast">早餐</string>
+    <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="weight">体重</string>
+    <string name="sports">运动</string>
+    <string name="settings">设置</string>
+    <string name="add_friends">加关注</string>
+    <string name="post_moments">发动态</string>
+    <string name="scan_qr">扫一扫</string>
+    <!--end action activity strings-->
+</resources>

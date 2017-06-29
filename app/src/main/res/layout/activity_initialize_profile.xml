@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_initialize_profile"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dobbby.kdietitian.login.InitializeProfileActivity">
+
+    <include android:id="@+id/custom_toolbar" layout="@layout/base_toolbar"/>
+
+    <FrameLayout
+            android:id="@+id/init_profile_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--add init profile related fragments here in Java code-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/init_profile_fragment"-->
+        <!--android:nacom.dobbby.kdietitian.login.InitGenderBirthdayFragmententment"-->
+        <!--tools:layout="@layout/fragment_init_gender_birth"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    </FrameLayout>
+
+</LinearLayout>

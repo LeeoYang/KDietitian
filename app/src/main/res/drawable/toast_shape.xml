@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:insetLeft="4dp"
+       android:insetTop="6dp"
+       android:insetRight="4dp"
+       android:insetBottom="6dp">
+    <shape android:shape="rectangle">
+        <corners android:radius="4dp"/>
+        <!--<stroke android:color="#BDA282" android:width="0.8dp"/>-->
+        <stroke android:color="@color/wb_toast_border" android:width="0.1dp"/>
+        <!--<stroke android:color="#6E5336" android:width="0.8dp"/>-->
+        <solid android:color="@color/wb_toast_body"/>
+        <padding android:left="16dp"
+                 android:top="8dp"
+                 android:right="16dp"
+                 android:bottom="8dp"/>
+    </shape>
+</inset>

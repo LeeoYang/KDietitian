@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/whiteBackground"
+             tools:context="com.dobbby.kdietitian.login.SubmitDietitianAuthPhotoFragment">
+
+    <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/photo_text_hint_1"
+                android:text="上传胸牌、执业证及资格证书"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/photo_text_hint_2"
+                android:layout_below="@id/photo_text_hint_1"
+                android:text="您需要通过权威认证, 才能开启收费模式"
+                android:textSize="12sp"
+                android:textColor="#666"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/photo_text_hint_3"
+                android:layout_below="@id/photo_text_hint_2"
+                android:text="资料越齐全, 越有助于通过认证\n请确保姓名、医院、职称、头像等信息清晰可见\n上传资料仅用于认证, 患者及第三方不可见"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="#666"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageButton
+                android:id="@+id/auth_take_photo"
+                android:layout_below="@id/photo_text_hint_3"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/dietitian_auth_take_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+
+        <TextView
+                android:id="@+id/auth_take_photo_text"
+                android:text="拍照上传"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/auth_take_photo"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:id="@+id/auth_line"
+                android:layout_below="@id/auth_take_photo_text"
+                android:layout_marginTop="30dp"
+                android:background="#888"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"/>
+
+        <TextView
+                android:id="@+id/auth_photos_text"
+                android:layout_below="@id/auth_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="22dp"
+                android:text="已上传文件"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:layout_below="@id/auth_photos_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="22dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:background="@mipmap/dietitian_add_photo_green"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+            <ImageView
+                    android:background="@mipmap/dietitian_add_photo_gray"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/send_dietitian_auth_query"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                style="@style/GreenButtonStyle"
+                android:text="发送"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

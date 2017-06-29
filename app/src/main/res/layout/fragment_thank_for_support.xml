@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/whiteBackground"
+             tools:context="com.dobbby.kdietitian.login.ThankForSupportFragment">
+
+    <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/thank_for_support_text"
+                android:text="感谢您的支持 !"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_below="@id/thank_for_support_text"
+                android:layout_marginTop="15dp"
+                android:text="我们将于48小时内\n以邮件形式通知您认证结果"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textColor="#888"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/continue_to_login"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                style="@style/GreenButtonStyle"
+                android:text="返回登录"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

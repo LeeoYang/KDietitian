@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WbNumberPickerView">
+        <attr name="pickerTextSize" format="dimension"/>
+        <attr name="pickerTextColor" format="color"/>
+        <attr name="pickerTextPadding" format="dimension"/>
+        <attr name="pickerTextMaxScale" format="float"/>
+        <attr name="pickerTextMinAlpha" format="float"/>
+        <attr name="pickerIsCycle" format="boolean"/>
+        <attr name="pickerMaxDisplayCount" format="integer"/>
+    </declare-styleable>
+</resources>

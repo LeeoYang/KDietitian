@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.dobbby.kdietitian.login.InitGoalFragment">
+
+    <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="@string/goal"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_marginTop="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/lose_weight_img"
+                            android:background="@drawable/unselected_circle"
+                            android:layout_centerInParent="true"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                    <TextView
+                            android:text="@string/lose_weight"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="16sp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/keep_shape_img"
+                            android:background="@drawable/selected_circle"
+                            android:layout_centerInParent="true"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                    <TextView
+                            android:layout_centerInParent="true"
+                            android:text="@string/keep_shape"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                    android:text="@string/recommend_keep_shape"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorSelected"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="@string/weight_goal"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <com.dobbby.kdietitian.util.WbNumberPickerView
+                        android:id="@+id/weight_picker1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="35dp"
+                        app:pickerTextColor="#333"
+                        app:pickerIsCycle="true"
+                        app:pickerTextMaxScale="2"
+                        app:pickerMaxDisplayCount="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <com.dobbby.kdietitian.util.WbNumberPickerView
+                        android:id="@+id/weight_picker2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        app:pickerTextColor="#333"
+                        app:pickerIsCycle="true"
+                        app:pickerTextMaxScale="2"
+                        app:pickerMaxDisplayCount="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:text="@string/dot"
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:textSize="24sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="9dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <com.dobbby.kdietitian.util.WbNumberPickerView
+                        android:id="@+id/weight_picker3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="9dp"
+                        app:pickerTextColor="#333"
+                        app:pickerIsCycle="true"
+                        app:pickerTextMaxScale="2"
+                        app:pickerMaxDisplayCount="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:text="@string/kg"
+                        android:textColor="#333"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/next_step"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                style="@style/GreenButtonStyle"
+                android:text="@string/next_step"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</FrameLayout>

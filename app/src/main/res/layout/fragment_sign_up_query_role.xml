@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/whiteBackground"
+             tools:context="com.dobbby.kdietitian.login.SignUpQueryRoleFragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/role_normal_img"
+                    android:src="@mipmap/role_normal_selected"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <TextView
+                    android:id="@+id/role_normal_txt"
+                    android:text="@string/role_normal"
+                    android:textColor="@color/colorSelected"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:layout_below="@id/role_normal_img"
+                    android:layout_alignStart="@id/role_normal_img"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/role_dietitian_img"
+                    android:layout_toEndOf="@id/role_normal_img"
+                    android:layout_marginStart="58dp"
+                    android:src="@mipmap/role_dietitian"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <TextView
+                    android:id="@+id/role_dietitian_txt"
+                    android:text="@string/role_dietitian"
+                    android:textColor="@color/colorNotSelected"
+                    android:textSize="16sp"
+                    android:layout_below="@id/role_dietitian_img"
+                    android:layout_alignStart="@id/role_dietitian_img"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <Button
+                android:id="@+id/next_step"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginTop="40dp"
+                style="@style/GreenButtonStyle"
+                android:text="@string/next_step"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</FrameLayout>

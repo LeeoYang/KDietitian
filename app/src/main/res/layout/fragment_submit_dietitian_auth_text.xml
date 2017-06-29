@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/whiteBackground"
+             tools:context="com.dobbby.kdietitian.login.SubmitDietitianAuthTextFragment">
+
+    <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/name_text"
+                    android:hint="请填写姓名"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_layout"
+                android:layout_below="@id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email_text"
+                    android:hint="请填写邮箱"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+                android:id="@+id/hospital_layout"
+                android:layout_below="@id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+            <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/gray_auth_tick"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/hospital_text"
+                        android:hint="所在医院"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:paddingStart="28dp"
+                        android:paddingEnd="28dp"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/office_layout"
+                android:layout_below="@id/hospital_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+            <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/gray_auth_tick"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/office_text"
+                        android:hint="所在科室"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:paddingStart="28dp"
+                        android:paddingEnd="28dp"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/title_layout"
+                android:layout_below="@id/office_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+            <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/gray_auth_tick"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/title_text"
+                        android:hint="您的职称"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:paddingStart="28dp"
+                        android:paddingEnd="28dp"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </FrameLayout>
+
+        <TextView
+                android:layout_below="@id/title_layout"
+                android:text="认证结果将以邮件形式通知您"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/next_step"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                style="@style/GreenButtonStyle"
+                android:text="@string/next_step"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

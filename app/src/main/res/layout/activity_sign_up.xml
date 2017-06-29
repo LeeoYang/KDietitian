@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dobbby.kdietitian.login.SignUpActivity">
+
+    <include android:id="@+id/custom_toolbar" layout="@layout/base_toolbar"/>
+
+    <FrameLayout
+            android:id="@+id/sign_up_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--add sign up related fragments here in Java code-->
+
+        <!--<fragment-->
+        <!--android:id="@+id/sign_up_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.dobbby.kdietitian.login.SignUpQueryTelFragment"-->
+        <!--tools:layout="@layout/fragment_sign_up_query_tel"/>-->
+
+    </FrameLayout>
+
+</LinearLayout>

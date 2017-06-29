@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#72ba99</color>
+    <color name="colorPrimaryDark">#57b19a</color>
+    <color name="colorAccent">#4ac0a3</color>
+
+    <color name="whiteBackground">#f0f0f0</color>
+    <color name="navigationBarBackground">#f1f1f1</color>
+    <color name="actionActivityBackground">#eeeeee</color>
+    <color name="colorSelected">#4ac0a3</color>
+    <color name="colorNotSelected">#9c9c9c</color>
+
+    <color name="actionBarBackground">#f6f6f6</color>
+    <color name="actionBarLineColor">#fff</color>
+    <color name="actionBarLineSelectedColor">#4695a3</color>
+
+    <color name="wb_toast_border">#a3835d</color>
+    <color name="wb_toast_body">#ffe9b8</color>
+</resources>

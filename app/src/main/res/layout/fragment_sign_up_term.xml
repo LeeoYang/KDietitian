@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/whiteBackground"
+             tools:context="com.dobbby.kdietitian.login.SignUpTermFragment">
+
+    <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_use_details"/>
+
+        <android.support.v7.widget.ButtonBarLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/disagree_to_term"
+                    style="@style/GrayButtonStyle"
+                    android:text="@string/i_disagree"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/agree_to_term"
+                    style="@style/GreenButtonStyle"
+                    android:text="@string/i_agree"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+        </android.support.v7.widget.ButtonBarLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

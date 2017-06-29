@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View
+            android:background="@drawable/navigation_bar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+    <LinearLayout
+            android:background="@color/navigationBarBackground"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+        <LinearLayout
+                android:id="@+id/navigation_home_layout"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/navigation_home_img"
+                    android:src="@mipmap/navigation_home_selected"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/navigation_bar_icon_size"
+                    android:layout_height="@dimen/navigation_bar_icon_size"/>
+
+            <TextView
+                    android:id="@+id/navigation_home_txt"
+                    android:text="首页"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/navigation_friends_layout"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/navigation_friends_img"
+                    android:src="@mipmap/navigation_friends"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/navigation_bar_icon_size"
+                    android:layout_height="@dimen/navigation_bar_icon_size"/>
+
+            <TextView
+                    android:id="@+id/navigation_friends_txt"
+                    android:text="好友"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorNotSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/navigation_action_button"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/navigation_center"
+                android:layout_width="@dimen/navigation_bar_center_icon_size"
+                android:layout_height="@dimen/navigation_bar_center_icon_size"/>
+
+        <LinearLayout
+                android:id="@+id/navigation_shop_layout"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/navigation_shop_img"
+                    android:src="@mipmap/navigation_shop"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/navigation_bar_icon_size"
+                    android:layout_height="@dimen/navigation_bar_icon_size"/>
+
+            <TextView
+                    android:id="@+id/navigation_shop_txt"
+                    android:text="商店"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorNotSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/navigation_me_layout"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/navigation_me_img"
+                    android:src="@mipmap/navigation_me"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/navigation_bar_icon_size"
+                    android:layout_height="@dimen/navigation_bar_icon_size"/>
+
+            <TextView
+                    android:id="@+id/navigation_me_txt"
+                    android:text="我"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorNotSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
